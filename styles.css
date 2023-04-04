@@ -1,0 +1,126 @@
+html {
+    font-family: 'Oxanium', sans-serif;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    align-items: center;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+button {
+    color: rgb(0, 5, 109);
+    border: 1px solid blue;
+    background-color: rgb(192, 254, 255);
+    font-family: 'Oxanium', sans-serif;
+    font-weight: 600;
+}
+
+button:hover {
+    border: 1px solid rgb(192, 254, 255);
+    color: rgb(192, 254, 255);
+    cursor: pointer;
+    background-color: rgb(0, 5, 109);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.clock-outer-border {
+    align-items: center;
+    background-color: rgb(192, 254, 255);
+    border: 30px ridge rgb(0, 0, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+}
+
+.clock-inner-border {
+    align-items: center;
+    background-color: rgb(0, 5, 109);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 290px;
+    justify-content: center;
+    width: 290px;
+}
+
+hr {
+    width: 200px;
+}
+.todayDate {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.currentTime {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 10px;
+    padding: 0;
+}
+
+.stopwatchTime {
+    font-size: 1.5rem;
+    margin: 20px;
+    padding: 0;
+}
+
+
+/*Media Query*/
+@media (max-width: 450px) {
+    h1{
+        font-size: 2.5rem;
+    }
+    .clock-outer-border {
+        border: 25px ridge rgb(0, 0, 255);
+        width: 250px;
+        height: 250px;
+        padding: 10px;
+    }
+    
+    .clock-inner-border {
+        height: 240px;
+        width: 240px;
+    }
+    
+    hr {
+        width: 180px;
+    }
+
+    .todayDate {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    
+    .currentTime {
+        font-size: 1rem;
+        margin: 10px;
+        padding: 0;
+    }
+    
+    .stopwatchTime {
+        font-size: 1.5rem;
+        margin: 10px;
+        padding: 0;
+    }
+
+}

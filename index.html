@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Digital Clock</title>
+</head>
+<body>
+    <h1>Digital Clock</h1>
+    <div class="clock-outer-border">
+        <div class="clock-inner-border">
+            <!--Current Date-->
+            <label class="todayDate">
+                <span class="day"></span>
+                <span> </span>
+                <span class="month"> </span>
+                <span> </span>
+                <span class="date"></span>
+            </label>
+
+            <!--Current Time-->
+            <h6 class="currentTime">
+                <span class="liveHours">00</span>
+                <span>:</span>
+                <span class="liveMinutes">00</span>
+                <span class="am-pm">AM</span>
+            </h6>
+
+            <hr>
+
+            <!--Stopwatch Time-->
+            <h5 class="stopwatchTime">
+                <span class="hours">00</span>
+                <span>:</span>
+                <span class="minutes">00</span>
+                <span>:</span>
+                <span class="seconds">00</span>
+                <span>:</span>
+                <span class="milliseconds">00</span>
+            </h5>
+
+            <div class="buttons">
+                <button class="start">Start</button>
+                <button class="stop">Stop</button>
+                <button class="reset">Reset</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
